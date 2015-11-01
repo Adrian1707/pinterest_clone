@@ -1,0 +1,11 @@
+<template name="main">
+<input type="hidden" name="updated" value="{{updated}}" id="updated">
+	{{#if adding_interest}}
+	{{>addform}}
+	{{/if}}
+<div class="container-fluid">
+	{{#each articles}}
+		{{>article}}
+	{{/each}}
+</div>
+</template>
